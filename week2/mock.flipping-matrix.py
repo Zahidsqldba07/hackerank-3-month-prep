@@ -13,14 +13,15 @@ import sys
 #
 
 # for each element in 2x2 matrix, check the mirror (all the possible position)
-# count all the maximum potential from every element in that upper left quadrant 
+# count all the maximum potential from every element in that upper left quadrant
 
 def flippingMatrix(matrix: list[list[int]]) -> int:
-    n = len(matrix) -1
+    n = len(matrix) - 1
     count = 0
     for i in range(len(matrix)//2):
         for j in range(len(matrix)//2):
-            count += max(matrix[i][j], matrix[n-i][ j], matrix[i][ n-j], matrix[n-i][n-j])
+            count += max(matrix[i][j], matrix[n-i][j],
+                         matrix[i][n-j], matrix[n-i][n-j])
 
     return count
 
