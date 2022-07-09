@@ -20,7 +20,7 @@ import sys
 # time O(n) , space O(n)
 
 
-def countSort(arr: list[list[int, str]]) -> None:
+def countSort(arr: list[list[str]]) -> None:
     arr_count = []
     for i in range(len(arr)):
         arr_count.append([])
