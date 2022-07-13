@@ -1,0 +1,1 @@
+# need trie so i dont feel like doing it :(
